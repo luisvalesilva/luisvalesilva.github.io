@@ -1,0 +1,45 @@
+/*!
+ * Timeline code found here
+ * http://www.webcreatorbox.com/en/tutorials/vertical-timeline/
+ */
+
+/* Timeline Styles */
+
+.timeline {
+  list-style: none;
+  background: #eee;
+  padding-left: 200px;
+}
+.timeline > li {
+  margin-bottom: 60px;
+}
+
+/* for Desktop */
+@media ( min-width : 640px ){
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+  .timeline-date {
+    width: 150px;
+    float: left;
+    margin-top: 20px;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 3px #e5e5d1 solid;
+    padding-left: 50px;
+  }
+  .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #6fc173;
+    position: absolute;
+    left: 146px;
+    top: 24px;
+    border-radius: 100%;
+  }
+}

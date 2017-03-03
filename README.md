@@ -1,3 +1,3 @@
 # My personal website
 
-[luisvalesilva.com](www.luisvalesilva.com)
+[luisvalesilva.com](http://luisvalesilva.com)

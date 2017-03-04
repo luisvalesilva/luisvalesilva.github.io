@@ -14,7 +14,7 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
-    color: #777;
+    color: #555;
     line-height: 1.8;
 }
 
@@ -90,36 +90,22 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="img/me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="111">
-    </div>
+  <div class="w3-center w3-padding-large">
+    <img src="img/me.jpg" class="w3-circle w3-image w3-opacity-min w3-hover-opacity-off" alt="Photo of Me" width="150px">
+  </div>
+  <p class="w3-center w3-large"><em>Genomic Data Scientist</em></p>
+  <p class="w3-large">I have a background in academic research, with experience in pharmaceutical drug development, Genetics, Genomics, and Molecular and Computational Biology./</p>
+  <p class="w3-large">Currently, I am a postdoctoral researcher at NYU studying meiosis, the specialized cell division required for sexual reproduction. My work involves the generation
+    and analysis of high-throughput genome-wide sequencing data. I routinely use next-generation sequencing (NGS) technology and computational methods, including shell scripting,
+    the programming languages R and Python, and open-source bioinformatics software.</p>
+  <p class="w3-large">Beyond Biology, I am interested in computational data analysis in general, or Data Science. I really enjoy studying and applying Computer Science, Math, Statistics and Machine Learning.</p>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  <div class="w3-padding-large">
+  <p class="w3-large w3-center w3-padding-16">Postsdoctoral Associate, NYU</p>
+  <p class="w3-large"><i class="fa fa-pencil w3-margin-right"></i>35 papers in peer-reviewed scientific journals</p>
+  <p class="w3-large"><i class="fa fa-book w3-margin-right"></i>A scientific book chapter</p>
+  <p class="w3-large"><i class="fa fa-align-justify w3-margin-right"></i>50+ abstracts in conference proceedings</p>
+  <p class="w3-large"><i class="fa fa-microphone w3-margin-right"></i>Several scientific talks</p>
   </div>
 </div>
 
@@ -169,8 +155,9 @@ body, html {
     </div>
 
     <div class="w3-col m3">
-      <img src="img/portfolio-2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      <img src="img/portfolio-2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
     </div>
+
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
@@ -187,8 +174,9 @@ body, html {
     </div>
 
     <div class="w3-col m3">
-      <img src="img/portfolio-2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <img src="img/portfolio-2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
     </div>
+
     <button class="w3-button w3-padding-xlarge" style="margin-top:64px">LOAD MORE</button>
   </div>
 </div>
@@ -211,35 +199,15 @@ body, html {
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
+  <!--<h3 class="w3-center">WHERE I WORK</h3>-->
   <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-container w3-section">
+    <div class="w3-center w3-container w3-section">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <p class="w3-center"><em>I'd love your feedback!<br>
+        Want to meet over a cup of <i class="fa fa-coffee"></i>?</em></p>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> New York, US<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="http://www.google.com/recaptcha/mailhide/d?k=01h1j_xgyB90IVGIZ9dA1Jfw==&c=Xhj_bgIAV8FLfilx0RETrFW9ECDjyd_22S11MmM8YEI=" target="_blank">Email me</a><br>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
     </div>
   </div>
 </div>
@@ -248,35 +216,19 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="https://www.linkedin.com/in/luís-a-vale-silva-81950b4a" target="_blank"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+    <a href="https://www.linkedin.com/in/luís-a-vale-silva-81950b4a" target="_blank"><i class="fa fa-linkedin w3-hover-text-blue"></i></a>
     <a href="https://scholar.google.com/citations?user=cmbAGggAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar w3-hover-text-orange"></i></a>
     <a href="https://www.researchgate.net/profile/Luis_Vale-Silva" target="_blank"><i class="ai ai-researchgate w3-hover-text-green"></i></a>
     <a href="https://github.com/luisvalesilva" target="_blank"><i class="fa fa-github w3-hover-text-grey"></i></a>
     <a href="https://twitter.com/luisvalesilva" target="_blank"><i class="fa fa-twitter w3-hover-text-light-blue"></i></a>
   </div>
-  <p>Copyright &copy; Luis Vale Silva 2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <p>&copy; Luis Vale Silva 2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 <!-- Add Google Maps -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;

@@ -33,22 +33,38 @@ body, html {
 
 h1 {letter-spacing: 6px}
 
+/* Create a Parallax Effect */
 /* Full height image header */
-.bg {
-    background-image: url("img/white.jpg");
-    height: 100%;
+.bgimgwhite, .bgimg, .bgpointmesh {
     background-position: center;
     background-size: cover;
 }
 
+.bgimgwhite {
+    height: 100%;
+    background-image: url("img/white.jpg");
+}
+
 /* Background image */
 .bgimg {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('img/bg.jpg');
     min-height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('img/bg.jpg');
+}
+
+.bgpointmesh {
+    height: 30%;
+}
+
+#canvas {
+  	background: #000;
+	margin: 0rem;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 </style>
 </head>
@@ -64,7 +80,7 @@ h1 {letter-spacing: 6px}
 
 
 <!-- Header -->
-<header class="bg w3-display-container w3-center" style="padding:128px 16px" id="home">
+<header class="bgimgwhite w3-display-container w3-center" style="padding:128px 16px" id="home">
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
   <div class="w3-display-middle">
   <h1 class="w3-xlarge">Luis Vale Silva</h1>
@@ -80,8 +96,8 @@ h1 {letter-spacing: 6px}
   <div class="w3-padding-64">
     <div class="w3-bar w3-border">
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-mobile">About</a>
-      <a href="#career" onclick="w3_close()" class="w3-bar-item w3-button w3-mobile w3-light-grey">Career</a>
       <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-mobile">Projects</a>
+      <a href="#career" onclick="w3_close()" class="w3-bar-item w3-button w3-mobile w3-light-grey">Career</a>
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-mobile">Contact</a>
     </div>
   </div>
@@ -105,6 +121,41 @@ h1 {letter-spacing: 6px}
     at Heidelberg University, Germany. Our research group "develops methods and algorithms for computer-based
     analysis of biological and medical images". My focus is on the use of Deep Learning for Cancer Imaging 
     Genomics, the multi-scale data fusion field combining hight-throughput Genomics and medical imaging data.</p>
+</div>
+
+<!-- Projects -->
+<div class="w3-row w3-center w3-padding-64 w3-margin-left w3-margin-right" id="projects">
+<h2 class="w3-center w3-padding-32">A few projects</h2>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xxxlarge"><i class="fas fa-microscope"></i></span><br>
+    <h4><b>wsipre</b></h4>
+    <p>Python package to handle digital<br>pathology whole-slide images</p>
+    <a href="https://luisvalesilva.com/wsipre/_build/html/index.html" target="_blank"><i class="fas fa-globe-europe w3-xlarge w3-hover-text-blue w3-padding-small"></i></a>
+    <a href="http://www.github.com/luisvalesilva/wsipre" target="_blank"><i class="fab fa-github w3-xlarge w3-hover-text-grey w3-padding-small"></i></a>
+  </div>
+
+  <div class="w3-quarter w3-section">
+    <span class="w3-xxxlarge"><i class="fas fa-analytics"></i></span><br>
+    <h4><b>hwglabr2</b></h4>
+    <p>R package for my previous<br>lab (Hochwagen lab)</p>
+    <a href="https://hochwagenlab.github.io/hwglabr2/" target="_blank"><i class="fas fa-globe-europe w3-xlarge w3-hover-text-blue w3-padding-small"></i></a>
+    <a href="https://github.com/hochwagenlab/hwglabr2" target="_blank"><i class="fab fa-github w3-xlarge w3-hover-text-grey w3-padding-small"></i></a>
+  </div>
+    
+  <div class="w3-quarter w3-section">
+    <span class="w3-xxxlarge"><i class="far fa-dna"></i></span><br>
+    <h4><b>SNPr</b></h4>
+    <p>Simple utility to introduce SNPs<br>in DNA sequence at random</p>
+    <a href="http://www.github.com/luisvalesilva/snpr" target="_blank"><i class="fab fa-github w3-xlarge w3-hover-text-grey w3-padding-small"></i></a>
+  </div>
+    
+  <div class="w3-quarter w3-section">
+    <span class="w3-xxxlarge"><i class="fa fa-desktop"></i></span><br>
+    <h4><b>digitre</b></h4>
+    <p>Simple web app to<br>recognize handwritten digits</p>
+    <a href="http://digitre.technology/" target="_blank"><i class="fas fa-globe-europe w3-xlarge w3-hover-text-blue w3-padding-small"></i></a>
+    <a href="http://www.github.com/luisvalesilva/digitre" target="_blank"><i class="fab fa-github w3-xlarge w3-hover-text-grey w3-padding-small"></i></a>
+  </div>
 </div>
 
 <!-- Tweets -->
@@ -165,39 +216,8 @@ h1 {letter-spacing: 6px}
 
 </div>
 
-<!-- Projects -->
-<div class="w3-row w3-center w3-padding-64 w3-margin-left w3-margin-right" id="projects">
-<h2 class="w3-center w3-padding-32">A few projects</h2>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xxxlarge"><i class="fas fa-microscope"></i></span><br>
-    <h4><b>wsipre</b></h4>
-    <p>Python package to handle digital<br>pathology whole-slide images</p>
-    <a href="https://luisvalesilva.com/wsipre/_build/html/index.html" target="_blank"><i class="fas fa-globe-europe w3-xlarge w3-hover-text-blue w3-padding-small"></i></a>
-    <a href="http://www.github.com/luisvalesilva/wsipre" target="_blank"><i class="fab fa-github w3-xlarge w3-hover-text-grey w3-padding-small"></i></a>
-  </div>
-
-  <div class="w3-quarter w3-section">
-    <span class="w3-xxxlarge"><i class="fas fa-analytics"></i></span><br>
-    <h4><b>hwglabr2</b></h4>
-    <p>R package for my previous<br>lab (Hochwagen lab)</p>
-    <a href="https://hochwagenlab.github.io/hwglabr2/" target="_blank"><i class="fas fa-globe-europe w3-xlarge w3-hover-text-blue w3-padding-small"></i></a>
-    <a href="https://github.com/hochwagenlab/hwglabr2" target="_blank"><i class="fab fa-github w3-xlarge w3-hover-text-grey w3-padding-small"></i></a>
-  </div>
-    
-  <div class="w3-quarter w3-section">
-    <span class="w3-xxxlarge"><i class="far fa-dna"></i></span><br>
-    <h4><b>SNPr</b></h4>
-    <p>Simple utility to introduce SNPs<br>in DNA sequence at random</p>
-    <a href="http://www.github.com/luisvalesilva/snpr" target="_blank"><i class="fab fa-github w3-xlarge w3-hover-text-grey w3-padding-small"></i></a>
-  </div>
-    
-  <div class="w3-quarter w3-section">
-    <span class="w3-xxxlarge"><i class="fa fa-desktop"></i></span><br>
-    <h4><b>digitre</b></h4>
-    <p>Simple web app to<br>recognize handwritten digits</p>
-    <a href="http://digitre.technology/" target="_blank"><i class="fas fa-globe-europe w3-xlarge w3-hover-text-blue w3-padding-small"></i></a>
-    <a href="http://www.github.com/luisvalesilva/digitre" target="_blank"><i class="fab fa-github w3-xlarge w3-hover-text-grey w3-padding-small"></i></a>
-  </div>
+<div class="w3-display-container w3-padding-64">
+  <canvas id="canvas"></canvas>
 </div>
 
 <!-- End Page Content -->
@@ -238,6 +258,7 @@ h1 {letter-spacing: 6px}
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <script src="js/typing_carousel.js"></script>
+<script src="js/point_mesh.js"></script>
 <!-- Code for smooth scrolling to anchors -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>

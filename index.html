@@ -35,7 +35,7 @@ h1 {letter-spacing: 6px}
 
 /* Create a Parallax Effect */
 /* Full height image header */
-.bgimgwhite, .bgimg, .bgpointmesh {
+.bgimgwhite, .bgimg {
     background-position: center;
     background-size: cover;
 }
@@ -54,14 +54,15 @@ h1 {letter-spacing: 6px}
 }
 
 .bgpointmesh {
+    background-attachment: fixed;
     height: 30%;
 }
 
 #canvas {
   	background: #000;
 	margin: 0rem;
-	position: absolute;
-	display: block;
+/*	position: absolute; */
+/* display: block; */
 	top: 0;
 	left: 0;
 	z-index: -1;
@@ -216,7 +217,7 @@ h1 {letter-spacing: 6px}
 
 </div>
 
-<div class="w3-display-container w3-padding-64">
+<div class="bgpointmesh w3-display-container">
   <canvas id="canvas"></canvas>
 </div>
 
